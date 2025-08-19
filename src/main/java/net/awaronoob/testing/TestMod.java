@@ -1,5 +1,6 @@
 package net.awaronoob.testing;
 
+import net.awaronoob.testing.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,5 +12,6 @@ public class TestMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModItems.registerModItems();
 	}
 }
