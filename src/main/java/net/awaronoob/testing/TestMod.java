@@ -1,5 +1,6 @@
 package net.awaronoob.testing;
 
+import net.awaronoob.testing.block.ModBlocks;
 import net.awaronoob.testing.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,6 +13,8 @@ public class TestMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        //Calls all register functions
         ModItems.registerModItems();
+        ModBlocks.registeredModBlocks();
 	}
 }
